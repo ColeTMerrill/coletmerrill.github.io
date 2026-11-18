@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="gold">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole T Merrill | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Visual Theme Ripple Overlay -->
+    <div id="themeRipple" class="theme-ripple" aria-hidden="true"></div>
+
+    <!-- Top Navbar with Centered Theme Switcher & Scroll-Spy Navigation -->
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="nav-brand">Cole T Merrill</a>
+
+            <!-- Multi-Option Visual Theme Switcher (Between Brand and Nav) -->
+            <div class="theme-switcher" role="group" aria-label="Theme Switcher">
+                <button type="button" class="theme-btn active" data-theme-target="gold" data-label="GT Gold" aria-label="Georgia Tech Gold Theme">
+                    <span class="swatch swatch-gold"></span>
+                    <span class="theme-name">GT Gold</span>
+                </button>
+                <button type="button" class="theme-btn" data-theme-target="ocean" data-label="Ocean" aria-label="Ocean Theme">
+                    <span class="swatch swatch-ocean"></span>
+                    <span class="theme-name">Ocean</span>
+                </button>
+                <button type="button" class="theme-btn" data-theme-target="emerald" data-label="Emerald" aria-label="Emerald Theme">
+                    <span class="swatch swatch-emerald"></span>
+                    <span class="theme-name">Emerald</span>
+                </button>
+                <button type="button" class="theme-btn" data-theme-target="amethyst" data-label="Amethyst" aria-label="Amethyst Theme">
+                    <span class="swatch swatch-amethyst"></span>
+                    <span class="theme-name">Amethyst</span>
+                </button>
+                <button type="button" class="theme-btn" data-theme-target="daylight" data-label="Daylight" aria-label="Daylight Light Theme">
+                    <span class="swatch swatch-daylight"></span>
+                    <span class="theme-name">Light</span>
+                </button>
+            </div>
+
+            <nav class="nav-links" id="mainNav">
+                <a href="#home" class="nav-item active" data-section="home">Home</a>
+                <a href="#portfolio" class="nav-item" data-section="portfolio">Portfolio</a>
+                <a href="#timeline" class="nav-item" data-section="timeline">Timeline</a>
+                <a href="#contact-footer" class="nav-item" data-section="contact-footer">Contact</a>
+                <a href="Cole_Merrill_Resume.pdf" target="_blank" class="cv-pill">Resume PDF</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Minimal Centered Hero Landing Page with Live Animated Canvas -->
+        <section id="home" class="hero-minimal scroll-section">
+            <div class="hero-ambient-glow glow-1" aria-hidden="true"></div>
+            <div class="hero-ambient-glow glow-2" aria-hidden="true"></div>
+            <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+            <div class="hero-center-box">
+                <div class="avatar-ring">
+                    <img 
+                        src="LinkedIn Headshot.png" 
+                        alt="Cole T Merrill" 
+                        class="profile-img"
+                        onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect width=%22200%22 height=%22200%22 fill=%22%230f172a%22/><circle cx=%22100%22 cy=%2278%22 r=%2234%22 fill=%22%2338bdf8%22 opacity=%220.85%22/><path d=%22M40 185 C40 135 160 135 160 185%22 fill=%22%2338bdf8%22 opacity=%220.85%22/></svg>';"
+                    >
+                </div>
+
+                <h1 class="hero-name">Cole T Merrill</h1>
+                <p class="hero-title">Strategy and Innovation @ Georgia Tech</p>
+
+                <!-- Minimal Icon Links Row -->
+                <div class="hero-icons">
+                    <a href="https://www.linkedin.com/in/coletmerrill" target="_blank" class="icon-btn" aria-label="LinkedIn" data-tooltip="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+
+                    <button type="button" class="icon-btn copy-trigger" data-copy="ctmerrill@icloud.com" aria-label="Copy Email" data-tooltip="Copy Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </button>
+
+                    <a href="tel:4705990849" class="icon-btn" aria-label="Phone" data-tooltip="470-599-0849">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </a>
+
+                    <a href="Cole_Merrill_Resume.pdf" target="_blank" class="icon-btn" aria-label="Resume PDF" data-tooltip="Resume PDF">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </a>
+                </div>
+
+                <a href="#portfolio" class="scroll-cue" aria-label="Scroll to portfolio">
+                    <span>Explore Work</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </a>
+            </div>
+
+            <div class="section-divider">
+                <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+                    <path class="divider-path" d="M0,20L1440,70L1440,70L0,70Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Portfolio Section: Major Projects & Leadership Initiatives -->
+        <section id="portfolio" class="portfolio-section scroll-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-kicker">Portfolio</span>
+                    <h2>Highlighted Ventures, Strategy &amp; Engineering</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Card 1 -->
+                    <article class="project-card">
+                        <div class="project-banner banner-indigo">
+                            <span class="banner-tag">CO-FOUNDER &bull; DATA &amp; AI</span>
+                            <div class="banner-headline">Code For Change</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Scalable Data Pipelines &amp; AI Retraining</h3>
+                            <p>Co-founded and led Data &amp; Operations for a technology initiative building custom data collection pipelines and AI retraining workflows for partner organizations under tight budgets.</p>
+                            <button class="project-btn" data-modal="cfc">Read Initiative Breakdown &rarr;</button>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="project-card">
+                        <div class="project-banner banner-cyan">
+                            <span class="banner-tag">HEALTHCARE STRATEGY</span>
+                            <div class="banner-headline">Rimidi Market Architecture</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Competitive Benchmarking &amp; Asset Evaluation</h3>
+                            <p>Engineered a cross-market product and pricing dataset alongside a structured decision tree evaluating digital health assets across pricing, EHR integration, and regulatory complexity.</p>
+                            <button class="project-btn" data-modal="rimidi">Read Strategy Breakdown &rarr;</button>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="project-card">
+                        <div class="project-banner banner-emerald">
+                            <span class="banner-tag">MULTI-SITE OPERATIONS</span>
+                            <div class="banner-headline">Clinic Pricing &amp; Workflow Modeling</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Demand-Based Pricing &amp; Capacity Optimization</h3>
+                            <p>Directed site-level data analysis at The Joint Chiropractic—aligning membership pricing models with local demographic trends and redesigning peak-hour spatial workflows to eliminate lobby bottlenecks.</p>
+                            <button class="project-btn" data-modal="joint">Read Operations Breakdown &rarr;</button>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="project-card">
+                        <div class="project-banner banner-purple">
+                            <span class="banner-tag">SOFTWARE ENGINEERING</span>
+                            <div class="banner-headline">Computer Vision &amp; Native C++</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Multi-Monitor Hand Tracking &amp; Audio Engine</h3>
+                            <p>Developed a Python (OpenCV/MediaPipe) spatial gesture controller mapping hand landmarks across three monitors, and a native C++ Win32/GDI real-time frequency spectrum visualizer.</p>
+                            <button class="project-btn" data-modal="systems">Read Technical Breakdown &rarr;</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section: Career Positions & Milestones -->
+        <section id="timeline" class="timeline-section scroll-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-kicker">Timeline</span>
+                    <h2>Positions, Leadership &amp; Education</h2>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon icon-policy" title="Public Policy">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="tl-badge">Holland &amp; Knight LLP</span>
+                            <h3>Public Policy &amp; Government Advocacy Intern</h3>
+                            <p>Joining the Georgia Government Advocacy Team in Atlanta during the Georgia General Assembly session to support state legislative tracking, regulatory analysis, and client policy strategy.</p>
+                            <span class="tl-date">January 2027 – March 2027 (Incoming)</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon icon-finance" title="Leadership">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="tl-badge">Phi Sigma Kappa @ Georgia Tech</span>
+                            <h3>Chapter Treasurer &amp; Event Coordinator</h3>
+                            <p>Manage chapter P&amp;L budgets, financial modeling, dues forecasting, and vendor contract negotiations for large-scale chapter operations and regional events.</p>
+                            <span class="tl-date">2025 – Present</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon icon-edu" title="Education">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="tl-badge">Georgia Institute of Technology</span>
+                            <h3>B.S. in Business Administration — Strategy and Innovation</h3>
+                            <p>Studying at the Scheller College of Business (transferred from Computer Science at UGA), combining corporate finance, accounting, and business analytics with software engineering foundations.</p>
+                            <span class="tl-date">Expected Graduation: May 2028</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon icon-ops" title="Operations">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="tl-badge">The Joint Chiropractic</span>
+                            <h3>Data &amp; Operations Coordinator</h3>
+                            <p>Analyzed site-level foot traffic and demographic demand to structure membership pricing, improve client retention, and streamline peak-hour clinic workflows.</p>
+                            <span class="tl-date">November 2023 – March 2026</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon icon-code" title="Co-Founder">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="tl-badge">Code For Change</span>
+                            <h3>Co-Founder, Data &amp; Operations</h3>
+                            <p>Built scalable Python/SQL data pipelines and AI retraining workflows, leading cross-functional student engineering teams through weekly sprints and code reviews.</p>
+                            <span class="tl-date">September 2022 – May 2024</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon icon-strategy" title="Strategy">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="tl-badge">Rimidi</span>
+                            <h3>Strategic Analysis Intern</h3>
+                            <p>Mapped competitor pricing architectures and built a structured evaluation framework across pricing, integration, and regulatory complexity to support executive investment decisions.</p>
+                            <span class="tl-date">May 2023 – June 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon icon-data" title="Data Governance">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </div>
+                        <div class="timeline-card">
+                            <span class="tl-badge">Rare Disease Research Center</span>
+                            <h3>Data Management Intern</h3>
+                            <p>Maintained data integrity and regulatory compliance across extensive patient and clinical specimen records.</p>
+                            <span class="tl-date">May 2022 – June 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Interactive Footer -->
+    <footer id="contact-footer" class="site-footer scroll-section">
+        <div class="container footer-grid">
+            <!-- Col 1: Interactive Click-to-Copy Contact Cards -->
+            <div class="footer-col">
+                <h4>Direct Contact (Click to Copy)</h4>
+                <div class="interactive-contact-stack">
+                    <button type="button" class="footer-copy-card copy-trigger" data-copy="ctmerrill@icloud.com">
+                        <div>
+                            <span class="fc-label">Email</span>
+                            <span class="fc-value">ctmerrill@icloud.com</span>
+                        </div>
+                        <span class="fc-badge">Copy</span>
+                    </button>
+
+                    <button type="button" class="footer-copy-card copy-trigger" data-copy="470-599-0849">
+                        <div>
+                            <span class="fc-label">Phone</span>
+                            <span class="fc-value">470-599-0849</span>
+                        </div>
+                        <span class="fc-badge">Copy</span>
+                    </button>
+
+                    <a href="https://www.linkedin.com/in/coletmerrill" target="_blank" class="footer-copy-card">
+                        <div>
+                            <span class="fc-label">LinkedIn</span>
+                            <span class="fc-value">linkedin.com/in/coletmerrill</span>
+                        </div>
+                        <span class="fc-badge">&#8599;</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Interactive Toolkit with 4 Categories & Sliding Skill Badges -->
+            <div class="footer-col">
+                <h4>Interactive Toolkit</h4>
+                <div class="toolkit-segmented-bar" role="tablist">
+                    <button type="button" class="ftab active" data-tab="strategy">Strategy</button>
+                    <button type="button" class="ftab" data-tab="finance">Finance</button>
+                    <button type="button" class="ftab" data-tab="tech">Technical</button>
+                    <button type="button" class="ftab" data-tab="interests">Interests</button>
+                </div>
+                <div class="ftab-viewport">
+                    <div class="ftab-panel" id="ftabPanel">
+                        <span class="fchip"><span class="chip-dot"></span>Competitive Benchmarking</span>
+                        <span class="fchip"><span class="chip-dot"></span>Market Positioning</span>
+                        <span class="fchip"><span class="chip-dot"></span>Healthcare Strategy</span>
+                        <span class="fchip"><span class="chip-dot"></span>Process Improvement</span>
+                        <span class="fchip"><span class="chip-dot"></span>Public Policy Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Col 3: Recruiting Status & Credentials Dossier -->
+            <div class="footer-col">
+                <h4>Recruiting &amp; Availability</h4>
+                <div class="availability-card">
+                    <div class="avail-row">
+                        <span class="avail-label">Target Window</span>
+                        <span class="avail-val highlight-emerald">Summer 2027 Internships</span>
+                    </div>
+                    <div class="avail-row">
+                        <span class="avail-label">Focus Areas</span>
+                        <span class="avail-val">Consulting, Strategy &amp; CRE Finance</span>
+                    </div>
+                    <div class="avail-row">
+                        <span class="avail-label">Graduation</span>
+                        <span class="avail-val">May 2028 (Georgia Tech B.S. BA)</span>
+                    </div>
+                    <div class="avail-actions">
+                        <a href="Cole_Merrill_Resume.pdf" target="_blank" class="btn-resume-footer">Download Resume PDF &#8599;</a>
+                        <button type="button" id="backToTopBtn" class="back-top-btn" title="Back to top">&uarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <div class="status-indicator">
+                <span class="live-dot"></span>
+                <span>Based in Atlanta, GA &bull; Local Time: <strong id="atlantaClock">--:--</strong></span>
+            </div>
+            <span>&copy; 2026 Cole T Merrill &bull; Georgia Institute of Technology</span>
+        </div>
+    </footer>
+
+    <!-- Project Deep-Dive Modal -->
+    <div id="detailModal" class="modal-backdrop" aria-hidden="true">
+        <div class="modal-box">
+            <div class="modal-header">
+                <span id="modalKicker" class="section-kicker">Breakdown</span>
+                <button id="closeModal" class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <h3 id="modalTitle">Title</h3>
+            <p id="modalBody" class="modal-body-text"></p>
+            <ul id="modalBullets" class="modal-bullets"></ul>
+        </div>
+    </div>
+
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
