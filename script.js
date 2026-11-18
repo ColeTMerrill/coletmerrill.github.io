@@ -260,9 +260,10 @@ const toolkitData = {
     interests: [
         'Investing & Markets',
         'Rock Climbing',
-        'Alpine Hiking',
-        'Systems Programming',
-        'Classic Strategy Card Games'
+        'International Travel & Hiking',
+        'Strategy Games & Chess',
+        'PC Gaming',
+        'Systems Programming'
     ]
 };
 
